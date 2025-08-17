@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="390" height="207">
+  <!-- Define the filter inside the <defs> section -->
+  <defs>
+    <filter id="drop-shadow">
+      <!-- 
+        feDropShadow is a filter primitive that creates a drop shadow effect.
+        - dx: Horizontal offset (0px)
+        - dy: Vertical offset (8px) for a larger drop
+        - stdDeviation: Blur radius (8px) for a softer, larger shadow
+        - flood-color: The color of the shadow
+        - flood-opacity: The opacity of the shadow, converting 40 to a decimal value
+      -->
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <!-- Apply the filter to the path element using the 'filter' attribute -->
+  <path d="M0 0 C128.7 0 257.4 0 390 0 C390 37.29 390 74.58 390 113 C386.4438641 110.86631846 383.37912183 108.81138172 380.125 106.3125 C343.89750794 80.00902837 296.62192668 79.48899954 254 86 C222.94746087 90.99624679 192.50049317 98.88428278 162.25390625 107.3984375 C161.56065876 107.59356871 160.86741127 107.78869991 160.15315628 107.98974419 C153.18366057 109.95303409 146.21695392 111.92568765 139.25706291 113.92277622 C44.03203253 141.23596451 44.03203253 141.23596451 15 127 C8.99626024 123.39148046 3.17657875 118.35315749 0 112 C0 75.04 0 38.08 0 0 Z " fill="#BDEA78" filter="url(#drop-shadow)"/>
+</svg>
