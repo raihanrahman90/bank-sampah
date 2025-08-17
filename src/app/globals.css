@@ -6,6 +6,8 @@
   --custom-primary: #fdfad6;
   --custom-secondary: #6ab334;
   --custom-background: #f3f8f3;
+  --custom-bright: #6ab334;
+  --custom-soft: #bad8b6;
 }
 
 @theme inline {
@@ -14,6 +16,8 @@
   --color-custom-primary: var(--custom-primary);
   --color-custom-secondary: var(--custom-secondary);
   --color-custom-background: var(--custom-background);
+  --color-custom-bright: var(--custom-bright);
+  --color-custom-soft: var(--custom-soft);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

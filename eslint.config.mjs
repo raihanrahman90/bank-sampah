@@ -1,16 +1,27 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
 const compat = new FlatCompat({
-  baseDirectory: __dirname,
+  baseDirectory: new URL(".", import.meta.url).pathname,
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  ...compat.extends(
+    "next/core-web-vitals",
+    "next/typescript",
+    "plugin:prettier/recommended",
+  ),
+  {
+    rules: {
+      // Prettier rules
+      "prettier/prettier": [
+        "error",
+        {
+          printWidth: 120, // maximum line length
+          endOfLine: "lf", // normalize line endings to LF
+        },
+      ],
+    },
+  },
 ];
 
 export default eslintConfig;
