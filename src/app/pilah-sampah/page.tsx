@@ -5,53 +5,67 @@ export default function Home() {
   type MenuItem = {
     title: string;
     image: string;
+    height: number;
+    width: number;
   };
   const menu: MenuItem[] = [
     {
       title: "PISAHKAN BERDASARKAN JENISNYA",
-      image: "/images/pilah-sampah.png",
+      image: "/images/pisahkan-berdasarkan-jenisnya.png",
+      height: 150,
+      width: 150,
     },
     {
       title: "CUCI ATAU BERSIHKAN SAMPAH",
-      image: "/images/harga-sampah.png",
+      image: "/images/cuci-atau-bersihkan-sampah.png",
+      height: 150,
+      width: 80,
     },
     {
       title: "BERI PENANDA ATAU LABEL",
-      image: "/images/alur-bank-sampah.png",
+      image: "/images/beri-penanda-atau-label.png",
+      height: 50,
+      width: 100,
     },
     {
       title: "SIMPAN DI TEMPAT KERING",
-      image: "/images/edukasi.png",
+      image: "/images/simpan-di-tempat-kering.png",
+      height: 50,
+      width: 100,
     },
     {
       title: "SETOR KE BANK SAMPAH",
-      image: "/images/lokasi.png",
+      image: "/images/setor-ke-bank-sampah.png",
+      height: 50,
+      width: 80,
     },
   ];
   return (
     <div className="h-[100vh] bg-custom-primary">
       <Header title="PILAH SAMPAH" image="/images/pilah-sampah.png" />
       <div className="px-5">
-        <div className="bg-custom-background p-2 rounded-3xl mt-3 shadow-[0px_9px_14px_0px_#FF8D4D33]">
+        <div className="bg-custom-background p-2 py-4 mb-5 rounded-3xl mt-5 shadow-[0px_9px_14px_0px_#FF8D4D33]">
           <h3 className="text-md text-custom-secondary leading-none font-bold text-center">
             TATA CARA PILAH SAMPAH
           </h3>
-        </div>{" "}
+        </div>
       </div>
-      <div className="flex flex-col items-start justify-start w-full rounded-t-3xl shadow-xl p-4 text-white gap-2">
+      <div className="flex flex-col items-start justify-start w-full rounded-t-3xl p-4 text-white gap-10">
         {menu.map((t) => (
-          <div className="w-full h-[50px] bg-custom-background" key={t.title}>
-            <div className="h-full w-full bg-background rounded-xl flex items-center gap-4 px-2">
+          <div
+            className="w-full h-[50px] bg-custom-background shadow-[0px_9px_14px_0px_#FF8D4D33] rounded-2xl"
+            key={t.title}
+          >
+            <div className="h-full w-full bg-custom-background rounded-xl flex items-center gap-4 px-2">
               <Image
                 src={t.image}
                 alt={t.title}
-                width={50} // tentukan ukuran gambar
-                height={50}
+                width={t.width} // tentukan ukuran gambar
+                height={t.height}
                 className="rounded-xl object-cover"
                 priority
               />
-
-              <div className="text-center font-semibold text-foreground">
+              <div className="ml-auto text-center font-semibold text-foreground text-sm w-1/2">
                 {t.title}
               </div>
             </div>
