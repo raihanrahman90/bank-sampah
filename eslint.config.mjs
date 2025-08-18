@@ -17,7 +17,6 @@ const eslintConfig = [
         "error",
         {
           printWidth: 120, // maximum line length
-          endOfLine: "lf", // normalize line endings to LF
         },
       ],
     },
