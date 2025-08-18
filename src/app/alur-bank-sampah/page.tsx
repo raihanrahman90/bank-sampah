@@ -10,31 +10,31 @@ export default function Home() {
   };
   const menu: MenuItem[] = [
     {
-      title: "PISAHKAN BERDASARKAN JENISNYA",
-      image: "/images/pisahkan-berdasarkan-jenisnya.png",
-      height: 150,
-      width: 150,
-    },
-    {
-      title: "CUCI ATAU BERSIHKAN SAMPAH",
-      image: "/images/cuci-atau-bersihkan-sampah.png",
+      title: "nasabah pilah sampah mulai dari rumah",
+      image: "/images/nasabah-pilah-sampah-mulai-dari-rumah.png",
       height: 150,
       width: 80,
     },
     {
-      title: "BERI PENANDA ATAU LABEL",
-      image: "/images/beri-penanda-atau-label.png",
+      title: "nasabah datang ke bank sampah bawa sampah dan buku tabungan",
+      image: "/images/nasabah-datang-ke-bank-sampah-bawa-sampah-dan-buku-tabungan.png",
+      height: 150,
+      width: 80,
+    },
+    {
+      title: "sampah ditimbang di bank sampah",
+      image: "/images/sampah-ditimbang-di-bank-sampah.png",
       height: 50,
       width: 100,
     },
     {
-      title: "SIMPAN DI TEMPAT KERING",
+      title: "pengurus melakukan pemilahan sampah",
       image: "/images/simpan-di-tempat-kering.png",
       height: 50,
       width: 100,
     },
     {
-      title: "SETOR KE BANK SAMPAH",
+      title: "sampah siap di jual ke bank sampah induk",
       image: "/images/setor-ke-bank-sampah.png",
       height: 50,
       width: 80,
@@ -42,12 +42,7 @@ export default function Home() {
   ];
   return (
     <div className="h-[100vh] bg-custom-primary">
-      <Header title="PILAH SAMPAH" image="/images/pilah-sampah.png" />
-      <div className="px-5">
-        <div className="bg-custom-background p-2 py-4 mb-5 rounded-3xl mt-5 shadow-[0px_9px_14px_0px_#FF8D4D33]">
-          <h3 className="text-md text-custom-secondary leading-none font-bold text-center">TATA CARA PILAH SAMPAH</h3>
-        </div>
-      </div>
+      <Header title="alur bank sampah" image="/images/alur-bank-sampah.png" />
       <div className="flex flex-col items-start justify-start w-full rounded-t-3xl p-4 text-white gap-10">
         {menu.map((t) => (
           <div
@@ -63,7 +58,7 @@ export default function Home() {
                 className="rounded-xl object-cover sm:ml-auto"
                 priority
               />
-              <div className="ml-auto text-center font-semibold text-foreground text-sm w-1/2">{t.title}</div>
+              <div className="ml-auto text-center font-semibold text-foreground text-sm w-1/2 uppercase">{t.title}</div>
             </div>
           </div>
         ))}
