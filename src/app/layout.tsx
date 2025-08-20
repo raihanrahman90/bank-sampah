@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bank Sampah",
+  title: "Sipilah",
   description: "Informasi bank sampah samarinda",
 };
 

@@ -1,18 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="390" height="207">
-  <!-- Define the filter inside the <defs> section -->
-  <defs>
-    <filter id="drop-shadow">
-      <!-- 
-        feDropShadow is a filter primitive that creates a drop shadow effect.
-        - dx: Horizontal offset (0px)
-        - dy: Vertical offset (8px) for a larger drop
-        - stdDeviation: Blur radius (8px) for a softer, larger shadow
-        - flood-color: The color of the shadow
-        - flood-opacity: The opacity of the shadow, converting 40 to a decimal value
-      -->
-      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.25" />
-    </filter>
-  </defs>
-  <!-- Apply the filter to the path element using the 'filter' attribute -->
-  <path d="M0 0 C128.7 0 257.4 0 390 0 C390 37.29 390 74.58 390 113 C386.4438641 110.86631846 383.37912183 108.81138172 380.125 106.3125 C343.89750794 80.00902837 296.62192668 79.48899954 254 86 C222.94746087 90.99624679 192.50049317 98.88428278 162.25390625 107.3984375 C161.56065876 107.59356871 160.86741127 107.78869991 160.15315628 107.98974419 C153.18366057 109.95303409 146.21695392 111.92568765 139.25706291 113.92277622 C44.03203253 141.23596451 44.03203253 141.23596451 15 127 C8.99626024 123.39148046 3.17657875 118.35315749 0 112 C0 75.04 0 38.08 0 0 Z " fill="#BDEA78" filter="url(#drop-shadow)"/>
+<svg width="390" height="119" viewBox="0 0 390 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_39_108)">
+<path d="M-4.49907 -24.8699H383.001C383.001 -24.8699 474 191.63 383.001 77.6301C292.002 -36.3699 -12.0001 131.63 -12 34.6301C-11.9999 -62.3699 -4.49907 -24.8699 -4.49907 -24.8699Z" fill="url(#paint0_linear_39_108)"/>
+</g>
+<defs>
+<filter id="filter0_d_39_108" x="-16" y="-32" width="443.445" height="150.792" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_39_108"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_39_108" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_39_108" x1="187.5" y1="-93" x2="189.5" y2="143" gradientUnits="userSpaceOnUse">
+<stop stop-color="#96E163"/>
+<stop offset="0.714477" stop-color="#ECF591"/>
+</linearGradient>
+</defs>
 </svg>

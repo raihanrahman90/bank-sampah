@@ -1,74 +1,61 @@
 import Image from "next/image";
-import Header from "./component/header";
 import Link from "next/link";
 
 export default function Home() {
-  type MenuItem = {
-    title: string;
-    image: string;
-    link: string;
-  };
-  const menu: MenuItem[] = [
-    {
-      title: "PILAH SAMPAH",
-      image: "/images/pilah-sampah.png",
-      link: "/pilah-sampah",
-    },
-    {
-      title: "HARGA SAMPAH",
-      image: "/images/harga-sampah.png",
-      link: "/harga-sampah",
-    },
-    {
-      title: "ALUR BANK SAMPAH",
-      image: "/images/alur-bank-sampah.png",
-      link: "/alur-bank-sampah",
-    },
-    {
-      title: "EDUKASI",
-      image: "/images/edukasi.png",
-      link: "/edukasi",
-    },
-    {
-      title: "LOKASI",
-      image: "/images/lokasi.png",
-      link: "/lokasi",
-    },
-    {
-      title: "ZONA MERAH",
-      image: "/images/zona-merah.png",
-      link: "/zona-merah",
-    },
-  ];
   return (
-    <div className="h-[100vh] bg-custom-primary">
-      <Header title="" image="" />
-      <div className="px-5">
-        <h3 className="text-[32px] text-custom-secondary leading-none mt-2 font-bold">Selamat Datang</h3>
-      </div>
-      <div className="flex flex-col items-start justify-start sm:items-center h-[50vh] w-full fixed bottom-0 left-0 rounded-t-3xl shadow-xl p-4 bg-custom-secondary text-white">
-        <h1 className="text-xl font-bold text-background mb-3">KATEGORI LAYANAN</h1>
-        <div className="grid grid-cols-3 grid-rows-2 items-start gap-4">
-          {menu.map((t) => (
-            <Link href={t.link} key={t.link} className="flex">
-              <div className="w-[100px] sm:w-[200px] h-fit" key={t.title}>
-                <div className="h-[70px] sm:h-[200px] w-full bg-background rounded-xl flex justify-center relative">
-                  <Image
-                    src={t.image}
-                    alt={t.title}
-                    className="object-cover bg-background rounded-2xl w-[50%] h-auto"
-                    fill
-                    priority
-                  />
-                </div>
-                <div key={t.title} className="text-center font-semibold">
-                  {t.title}
-                </div>
-              </div>
-            </Link>
-          ))}
+    <div className="h-[100vh] max-w-[450px] mx-auto overflow-hidden bg-gradient-to-b from-[#EEF592] to-[#62D648] relative">
+      <Image
+        alt="aset bottom"
+        height={100}
+        width={100}
+        src={"/images/start-top-left.svg"}
+        className="top-0 absolute w-[40%]"
+      />
+      <Image
+        alt="logo 2"
+        height={100}
+        width={100}
+        src={"/images/logo_2.svg"}
+        className="top-0 absolute w-[100px] mt-5 ml-5"
+      />
+
+      <Image
+        alt="aset bottom"
+        height={100}
+        width={100}
+        src={"/images/start-bottom.svg"}
+        className="bottom-0 absolute w-full"
+      />
+      <div className="absolute inset-0 flex flex-col items-center justify-center px-4 gap-10">
+        <h2 className="uppercase text-center text-custom-dark text-2xl font-bold">
+          pemerintah kota samarinda kelurahan gunung lingai
+        </h2>
+        <Image alt="logo sipilah" src={"/images/logo.svg"} height={240} width={240} />
+        <div className="relative">
+          <Image
+            alt="logo sipilah"
+            src={"/images/sipilah-aset.svg"}
+            height={100}
+            width={100}
+            className="absolute top-[-50px] right-[-50px]"
+          />
+          <h3
+            className="uppercase text-[40px] font-title text-[#FFDDFF]"
+            style={{ textShadow: "0px 4px 4px rgba(0,0,0,0.25)" }}
+          >
+            Sipilah
+          </h3>
         </div>
       </div>
+      <Link
+        href="/home"
+        className="poppins-bold text-custom-dark 
+        text-[32px] px-10 w-[300px] bg-white absolute 
+        left-1/2 -translate-x-1/2 bottom-0 
+        translate-y-[-100px] rounded-[50px] text-center py-3 shadow-2xl hover:bg-custom-dark hover:text-white"
+      >
+        START NOW
+      </Link>
     </div>
   );
 }

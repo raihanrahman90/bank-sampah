@@ -9,12 +9,12 @@ interface PageTemplateProps {
 
 export default function PageTemplate({ title, image, children }: PageTemplateProps) {
   return (
-    <div className="h-[100vh] bg-custom-primary">
+    <div className="h-[100vh] bg-custom-primary max-w-[450px] mx-auto overflow-hidden">
       <Header title={title} image={image} />
       <div
         className="flex flex-col items-start justify-start w-full 
                    rounded-t-3xl p-4 text-white gap-10
-                   max-w-[600px] mx-auto"
+                   max-w-[600px] mx-auto relative h-full"
       >
         {children}
       </div>
