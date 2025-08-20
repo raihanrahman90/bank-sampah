@@ -1,6 +1,7 @@
 "use client";
 import Header from "../component/header";
 import Footer from "../component/footer";
+import PageTemplate from "../component/template";
 
 export default function Home() {
   type SampahItem = {
@@ -16,16 +17,12 @@ export default function Home() {
   // Pagination state
 
   return (
-    <div className="h-[100vh] bg-custom-primary">
-      <Header title="Edukasi" image="/images/edukasi.png" />
-
+    <PageTemplate title="Edukasi" image="/images/edukasi.png">
       <div className="flex flex-col items-center justify-start w-full rounded-t-3xl p-4 text-white gap-6 my-10 z-10 overflow-y-scroll h-[50vh]">
         {menu.map((t) => (
           <div className="w-full  max-w-[500px] h-fit rounded-2xl flex flex-col items-center gap-5" key={t.title}>
-            <div className="w-full">
-              <div className="font-semibold text-foreground text-sm w-2/5 shadow-[0px_9px_14px_0px_#FF8D4D33] h-full bg-custom-background rounded-2xl flex items-center justify-center uppercase px-3 py-3">
-                {t.title}
-              </div>
+            <div className="font-semibold text-foreground text-sm w-full shadow-[0px_9px_14px_0px_#FF8D4D33] h-full bg-custom-background rounded-2xl flex items-center justify-center uppercase px-3 py-3">
+              {t.title}
             </div>
 
             <div className="w-full max-w-2xl aspect-video h-fit z-10">
@@ -43,6 +40,6 @@ export default function Home() {
       </div>
 
       <Footer />
-    </div>
+    </PageTemplate>
   );
 }

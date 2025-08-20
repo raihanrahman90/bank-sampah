@@ -1,10 +1,6 @@
 import Header from "../../component/header";
-import LokasiBankSampah from "../data";
 
-export default function LokasiPage({ params }) {
-  const { id } = params;
-  const data = LokasiBankSampah[id];
-
+export default function LokasiPage() {
   return (
     <div className="h-[100vh] bg-custom-primary">
       <Header title="Lokasi bank sampah" image="/images/lokasi.png" />
