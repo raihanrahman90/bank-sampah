@@ -50,7 +50,9 @@ export default function Home() {
   return (
     <PageTemplate title="SIPILAH" image="/images/logo.svg">
       <div className="px-5">
-        <h3 className="text-[32px] text-custom-dark leading-none mt-2 font-bold text font-title">Selamat Datang</h3>
+        <h3 className="text-[32px] md:text-5xl text-custom-dark leading-none mt-2 font-bold text font-title">
+          Selamat Datang
+        </h3>
       </div>
       <div
         className="flex flex-col items-start justify-start 
