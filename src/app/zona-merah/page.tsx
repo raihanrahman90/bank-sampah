@@ -1,8 +1,6 @@
 "use client";
-import Header from "../component/header";
 import Footer from "../component/footer";
 import PageTemplate from "../component/template";
-import Image from "next/image";
 
 export default function Home() {
   type SampahItem = {

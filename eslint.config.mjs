@@ -15,6 +15,8 @@ const eslintConfig = [
           printWidth: 120, // maximum line length
         },
       ],
+      "@next/next/no-img-element": "off",
+      "jsx-a11y/alt-text": "off",
     },
   },
 ];

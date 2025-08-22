@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Header from "../component/header";
 import LokasiBankSampah from "./data";
 import Link from "next/link";
 import PageTemplate from "../component/template";
@@ -15,6 +13,7 @@ export default function Home() {
           <Link
             className="w-full h-[50px] bg-custom-bright shadow-[0px_9px_14px_0px_#FF8D4D33] rounded-2xl text-background text-2xl uppercase text-center pt-2"
             href={`/lokasi/${t.id}`}
+            key={t.id}
           >
             {t.name}
           </Link>
