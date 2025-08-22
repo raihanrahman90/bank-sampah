@@ -54,10 +54,9 @@ export default function Home() {
       </div>
       <div
         className="flex flex-col items-start justify-start 
-             sm:items-center h-[70vh] w-full absolute 
-             top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+             sm:items-center sm:h-[70vh] h-[80vh] w-full 
              rounded-t-3xl shadow-xl p-4 bg-custom-secondary text-white
-             px-10"
+             px-10 absolute left-0 bottom-0"
       >
         <div className="w-fit mx-auto">
           <h1 className="text-xl font-bold text-background mb-3">KATEGORI LAYANAN</h1>

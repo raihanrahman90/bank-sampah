@@ -6,15 +6,7 @@ type HeaderProps = {
 
 const Header = ({ title, image }: HeaderProps) => {
   return (
-    <div className="relative w-full h-[15vh] mb-[-40px] md:mb-0">
-      <Image
-        src="/images/header-background.svg"
-        alt="Header background"
-        height={100}
-        width={100}
-        className="z-0 h-[240px] mt-[-20px] w-full absolute"
-        priority
-      />
+    <div className="relative w-full h-[15vh] mb-[-40px] md:mb-0 bg-[url('/images/header-background.svg')] bg-cover bg-center">
       <div className="max-w-[550px] relative mx-auto">
         <div className="w-[80%] absolute top-5 left-5 z-10 ">
           <h1
@@ -24,8 +16,8 @@ const Header = ({ title, image }: HeaderProps) => {
         </div>
 
         {image && image.trim() !== "" && (
-          <div className="aspect-square h-25 rounded-full overflow-hidden bg-custom-background md:right-[10%] right-10 top-10 absolute shadow-[0px_4px_4px_0px_#00000040] p-5">
-            <img src={image} alt="gambar halaman" className="h-[60px]" />
+          <div className="aspect-square sm:h-25 h-15 rounded-full overflow-hidden bg-custom-background md:right-[10%] sm:right-10 sm:top-10 right-5 top-5 absolute shadow-[0px_4px_4px_0px_#00000040] sm:p-5">
+            <img src={image} alt="gambar halaman" className="h-full" />
           </div>
         )}
       </div>

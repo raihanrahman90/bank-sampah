@@ -9,7 +9,7 @@ interface PageTemplateProps {
 
 export default function PageTemplate({ title, image, children }: PageTemplateProps) {
   return (
-    <div className="h-[100vh] bg-custom-primary max-w-[450px] mx-auto overflow-hidden">
+    <div className="h-[100vh] bg-custom-primary max-w-[450px] mx-auto overflow-hidden bg-cover bg-center">
       <Header title={title} image={image} />
       <div
         className="flex flex-col items-start justify-start w-full 
