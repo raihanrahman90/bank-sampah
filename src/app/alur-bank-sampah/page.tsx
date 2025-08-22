@@ -43,24 +43,26 @@ const menu: MenuItem[] = [
 export default function AlurBankSampahPage() {
   return (
     <Template title="alur bank sampah" image="/images/alur-bank-sampah.png">
-      {menu.map((t) => (
-        <div
-          className="w-full h-[50px] bg-custom-background shadow-[0px_9px_14px_0px_#FF8D4D33] rounded-2xl"
-          key={t.title}
-        >
-          <div className="h-full w-full bg-custom-background rounded-xl flex items-center gap-4 px-2">
-            <Image
-              src={t.image}
-              alt={t.title}
-              width={t.width}
-              height={t.height}
-              className="rounded-xl object-cover sm:ml-auto"
-              priority
-            />
-            <div className="ml-auto text-center font-semibold text-foreground text-sm w-1/2 uppercase">{t.title}</div>
+      <div className="mt-20 h-[80vh] overflow-y-scroll flex flex-col gap-10 pt-10">
+        {menu.map((t) => (
+          <div
+            className="w-full h-[50px] bg-custom-background shadow-[0px_9px_14px_0px_#FF8D4D33] rounded-2xl"
+            key={t.title}
+          >
+            <div className="h-full w-full bg-custom-background rounded-xl flex items-center gap-4 px-2">
+              <Image
+                src={t.image}
+                alt={t.title}
+                width={t.width}
+                height={t.height}
+                className="rounded-xl object-cover sm:ml-auto"
+                priority
+              />
+              <div className="ml-auto text-center font-semibold text-foreground text-sm w-1/2 uppercase">{t.title}</div>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </Template>
   );
 }
