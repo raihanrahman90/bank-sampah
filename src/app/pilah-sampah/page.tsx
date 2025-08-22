@@ -12,7 +12,7 @@ const menu: MenuItem[] = [
     title: "PISAHKAN BERDASARKAN JENISNYA",
     image: "/images/pisahkan-berdasarkan-jenisnya.svg",
     height: 150,
-    width: 150,
+    width: 100,
   },
   {
     title: "CUCI ATAU BERSIHKAN SAMPAH",
@@ -45,7 +45,7 @@ export default function Home() {
       <div className="px-5 w-full bg-custom-background py-4 rounded-3xl mt-5 shadow-[0px_9px_14px_0px_#FF8D4D33]">
         <h3 className="text-md text-custom-secondary leading-none font-bold text-center">TATA CARA PILAH SAMPAH</h3>
       </div>
-      <div className="flex flex-col items-start justify-start w-full rounded-t-3xl p-4 text-white gap-10 overflow-y-scroll">
+      <div className="flex flex-col items-start justify-start w-full rounded-t-3xl p-4 pb-10 text-white gap-10 overflow-y-scroll">
         {menu.map((t) => (
           <div
             className="w-full h-[50px] bg-custom-background shadow-[0px_9px_14px_0px_#FF8D4D33] rounded-2xl"
@@ -57,7 +57,7 @@ export default function Home() {
                 alt={t.title}
                 width={t.width} // tentukan ukuran gambar
                 height={t.height}
-                className="rounded-xl object-cover sm:ml-auto"
+                className="rounded-xl object-cover ml-auto"
                 priority
               />
               <div className="ml-auto text-center font-semibold text-foreground text-sm w-1/2">{t.title}</div>

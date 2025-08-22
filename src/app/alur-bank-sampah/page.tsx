@@ -43,7 +43,7 @@ const menu: MenuItem[] = [
 export default function AlurBankSampahPage() {
   return (
     <Template title="alur bank sampah" image="/images/alur-bank-sampah.png">
-      <div className="mt-20 h-[80vh] overflow-y-scroll flex flex-col gap-10 pt-10">
+      <div className="mt-20 h-[80vh] overflow-y-scroll flex flex-col gap-10 pt-10 pb-10">
         {menu.map((t) => (
           <div
             className="w-full h-[50px] bg-custom-background shadow-[0px_9px_14px_0px_#FF8D4D33] rounded-2xl"
