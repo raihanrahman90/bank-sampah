@@ -48,7 +48,7 @@ export default function Home() {
     },
   ];
   return (
-    <PageTemplate title="SIPILAH" image="/images/logo.svg">
+    <PageTemplate title="SIPILAH" image="/images/logo.svg" logoKKN="/images/logo-kkn.png">
       <div className="px-5">
         <h3 className="text-[32px] md:text-5xl text-custom-dark leading-none mt-2 font-bold text font-title">
           Selamat Datang
@@ -58,7 +58,7 @@ export default function Home() {
         className="flex flex-col items-start justify-start 
              sm:items-center sm:h-[70vh] h-[75vh] w-full 
              rounded-t-3xl shadow-xl p-4 bg-custom-secondary text-white
-             px-10 absolute left-0 bottom-0"
+             px-10 absolute left-0 bottom-0 overflow-y-scroll"
       >
         <div className="w-fit mx-auto">
           <h1 className="text-xl font-bold text-background mb-3">KATEGORI LAYANAN</h1>

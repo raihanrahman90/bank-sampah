@@ -3,10 +3,11 @@ import React from "react";
 interface PageTemplateProps {
   title: string;
   image: string;
+  logoKKN?: string;
   children: React.ReactNode;
 }
 
-export default function PageTemplate({ title, image, children }: PageTemplateProps) {
+export default function PageTemplate({ title, image, logoKKN, children }: PageTemplateProps) {
   return (
     <div className="h-[100vh] bg-custom-primary max-w-[450px] mx-auto overflow-hidden bg-cover bg-center">
       <div className="relative w-full sm:h-[15vh] h-[20vh] mb-[-40px] md:mb-0 bg-[url('/images/header-background.svg')] bg-cover bg-center">
@@ -18,11 +19,18 @@ export default function PageTemplate({ title, image, children }: PageTemplatePro
             ></h1>
           </div>
 
-          {image && image.trim() !== "" && (
-            <div className="aspect-square md:h-20 sm:h-25 h-15 rounded-full overflow-hidden bg-custom-background md:right-[10%] sm:right-10 sm:top-10 right-5 top-5 absolute shadow-[0px_4px_4px_0px_#00000040] sm:p-5">
-              <img src={image} alt="gambar halaman" className="h-full" />
-            </div>
-          )}
+          <div className="flex absolute  md:right-[10%] sm:right-10 sm:top-10 right-5 top-5 absolute gap-5">
+            {image && image.trim() !== "" && (
+              <div className="aspect-square md:h-20 sm:h-25 h-15 rounded-full overflow-hidden bg-custom-background shadow-[0px_4px_4px_0px_#00000040] sm:p-5">
+                <img src={image} alt="gambar halaman" className="h-full" />
+              </div>
+            )}
+            {logoKKN && logoKKN.trim() !== "" && (
+              <div className="aspect-square md:h-20 sm:h-25 h-15 rounded-full overflow-hidden bg-custom-background shadow-[0px_4px_4px_0px_#00000040] sm:p-5">
+                <img src={logoKKN} alt="gambar halaman" className="h-full" />
+              </div>
+            )}
+          </div>
         </div>
       </div>
       <div

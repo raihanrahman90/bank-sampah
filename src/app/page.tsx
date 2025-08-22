@@ -11,13 +11,22 @@ export default function Home() {
         src={"/images/start-top-left.svg"}
         className="top-0 absolute w-[40%]"
       />
-      <Image
-        alt="logo 2"
-        height={100}
-        width={100}
-        src={"/images/logo_2.svg"}
-        className="top-0 absolute w-[100px] mt-5 ml-5"
-      />
+      <div className="top-0 absolute mt-5 ml-5 flex">
+        <Image
+          alt="logo 2"
+          height={100}
+          width={100}
+          src={"/images/logo_2.svg"}
+          className="w-[70px]"
+        />
+        <Image
+          alt="logo 2"
+          height={100}
+          width={100}
+          src={"/images/logo-kkn.png"}
+          className="w-[70px]"
+        />
+      </div>
 
       <Image
         alt="aset bottom"
