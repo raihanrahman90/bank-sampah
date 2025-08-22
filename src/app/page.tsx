@@ -26,11 +26,12 @@ export default function Home() {
         src={"/images/start-bottom.svg"}
         className="bottom-0 absolute w-full"
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-center px-4 gap-10">
-        <h2 className="uppercase text-center text-custom-dark text-2xl font-bold">
+      <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
+        <h2 className="uppercase text-center text-custom-dark text-xl font-bold">
           pemerintah kota samarinda kelurahan gunung lingai
         </h2>
-        <Image alt="logo sipilah" src={"/images/logo.svg"} height={240} width={240} />
+        <Image alt="logo sipilah" src={"/images/logo.svg"} height={240} width={240}
+          className="w-[150px] h-auto" />
         <div className="relative">
           <Image
             alt="logo sipilah"
@@ -50,7 +51,7 @@ export default function Home() {
       <Link
         href="/home"
         className="poppins-bold text-custom-dark 
-        text-[32px] px-10 w-[300px] bg-white absolute 
+        text-[18px] px-10 w-[300px] bg-white absolute 
         left-1/2 -translate-x-1/2 bottom-0 
         translate-y-[-100px] rounded-[50px] text-center py-3 shadow-2xl hover:bg-custom-dark hover:text-white"
       >
