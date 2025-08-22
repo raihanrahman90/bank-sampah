@@ -48,7 +48,7 @@ export default function Home() {
     },
   ];
   return (
-    <PageTemplate title="" image="">
+    <PageTemplate title="SIPILAH" image="/images/logo.svg">
       <div className="px-5">
         <h3 className="text-[32px] text-custom-dark leading-none mt-2 font-bold text font-title">Selamat Datang</h3>
       </div>

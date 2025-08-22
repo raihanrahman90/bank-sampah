@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Header from "../component/header";
 import Footer from "../component/footer";
+import PageTemplate from "../component/template";
 
 export default function Home() {
   type SampahItem = {
@@ -67,13 +68,11 @@ export default function Home() {
   const pagedMenu = menu.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   return (
-    <div className="h-[100vh] bg-custom-primary">
-      <Header title="Harga Sampah" image="/images/pilah-sampah.png" />
-
+    <PageTemplate title="Harga Sampah" image="/images/harga-sampah.png">
       <div className="flex flex-col items-start justify-start w-full rounded-t-3xl p-4 text-white gap-6 my-10">
         {pagedMenu.map((t) => (
           <div className="w-full h-[50px] rounded-2xl flex items-center" key={t.title}>
-            <div className="ml-auto text-center font-semibold text-foreground text-sm w-2/5 shadow-[0px_9px_14px_0px_#FF8D4D33] h-full bg-custom-background rounded-2xl flex items-center justify-center uppercase px-3">
+            <div className="mx-auto text-center font-semibold text-foreground text-sm w-2/5 shadow-[0px_9px_14px_0px_#FF8D4D33] h-full bg-custom-background rounded-2xl flex items-center justify-center uppercase px-3">
               {t.title}
             </div>
 
@@ -85,9 +84,9 @@ export default function Home() {
       </div>
 
       {/* Pagination controls */}
-      <div className="flex justify-center gap-3 mt-5 z-10">
+      <div className="flex justify-center gap-3 mt-5 z-10 mx-auto">
         <button
-          className="px-3 py-1 rounded bg-custom-bright z-10 font-bold text-background"
+          className="px-10 py-5 rounded bg-custom-bright z-10 font-bold text-background hover:cursor-pointer"
           disabled={currentPage === 1}
           onClick={() => setCurrentPage((p) => p - 1)}
         >
@@ -97,7 +96,7 @@ export default function Home() {
           {currentPage} / {totalPages}
         </span>
         <button
-          className="px-3 py-1 rounded bg-custom-bright z-10 font-bold text-background"
+          className="px-3 py-1 rounded bg-custom-bright z-10 font-bold text-background hover:cursor-pointer"
           disabled={currentPage === totalPages}
           onClick={() => setCurrentPage((p) => p + 1)}
         >
@@ -105,6 +104,6 @@ export default function Home() {
         </button>
       </div>
       <Footer />
-    </div>
+    </PageTemplate>
   );
 }
