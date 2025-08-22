@@ -15,8 +15,8 @@ export default function LokasiPage() {
         </div>
         <iframe src={data.url} height="250" loading="lazy" className="w-full mt-[-10px] z-0"></iframe>
       </div>
-      <div className="flex flex-col items-start justify-start w-full rounded-3xl p-4 bg-custom-background text-foreground uppercase">
-        <div className="flex items-center gap-2">
+      <div className="flex flex-col items-start justify-start w-full rounded-3xl p-4 bg-custom-background text-foreground uppercase font-bold">
+        <div className="flex items-center gap-2 font-bold">
           <img src="/images/lokasi-bank-sampah-schedule.svg" className="w-[100px]" />
           <div>:</div>
           <div>{data.schedule}</div>
