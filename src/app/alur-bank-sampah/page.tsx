@@ -37,7 +37,7 @@ const menu: MenuItem[] = [
     image: "/images/pengurus-melakukan-pemilahan-sampah.svg",
     height: 50,
     width: 100,
-  }, ,
+  },
   {
     title: "sampah siap dijual ke bank sampah induk",
     image: "/images/sampah-siap-dijual-ke-bank-sampah-induk.svg",
