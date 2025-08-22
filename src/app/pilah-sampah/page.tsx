@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Header from "../component/header";
 import PageTemplate from "../component/template";
 
 type MenuItem = {
