@@ -27,14 +27,20 @@ const menu: MenuItem[] = [
     width: 70,
   },
   {
-    title: "pengurus melakukan pemilahan sampah",
-    image: "/images/simpan-di-tempat-kering.svg",
+    title: "hasil timbangan dicatat di buku tabungan",
+    image: "/images/hasil-timbangan-dicatat-di-buku-tabungan.svg",
     height: 50,
     width: 100,
   },
   {
-    title: "sampah siap di jual ke bank sampah induk",
-    image: "/images/setor-ke-bank-sampah.svg",
+    title: "pengurus melakukan pemilahan sampah",
+    image: "/images/pengurus-melakukan-pemilahan-sampah.svg",
+    height: 50,
+    width: 100,
+  }, ,
+  {
+    title: "sampah siap dijual ke bank sampah induk",
+    image: "/images/sampah-siap-dijual-ke-bank-sampah-induk.svg",
     height: 50,
     width: 100,
   },
@@ -43,7 +49,7 @@ const menu: MenuItem[] = [
 export default function AlurBankSampahPage() {
   return (
     <Template title="alur bank sampah" image="/images/alur-bank-sampah.png">
-      <div className="mt-20 h-[80vh] overflow-y-scroll flex flex-col gap-10 pt-10 pb-10">
+      <div className="sm:mt-20 h-[80vh] overflow-y-scroll flex flex-col gap-10 pt-10 pb-10">
         {menu.map((t) => (
           <div
             className="w-full h-[50px] bg-custom-background shadow-[0px_9px_14px_0px_#FF8D4D33] rounded-2xl"
