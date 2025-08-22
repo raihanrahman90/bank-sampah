@@ -10,31 +10,31 @@ type MenuItem = {
 const menu: MenuItem[] = [
   {
     title: "PISAHKAN BERDASARKAN JENISNYA",
-    image: "/images/pisahkan-berdasarkan-jenisnya.png",
+    image: "/images/pisahkan-berdasarkan-jenisnya.svg",
     height: 150,
     width: 150,
   },
   {
     title: "CUCI ATAU BERSIHKAN SAMPAH",
-    image: "/images/cuci-atau-bersihkan-sampah.png",
+    image: "/images/cuci-atau-bersihkan-sampah.svg",
     height: 150,
     width: 80,
   },
   {
     title: "BERI PENANDA ATAU LABEL",
-    image: "/images/beri-penanda-atau-label.png",
+    image: "/images/beri-penanda-atau-label.svg",
     height: 50,
     width: 100,
   },
   {
     title: "SIMPAN DI TEMPAT KERING",
-    image: "/images/simpan-di-tempat-kering.png",
+    image: "/images/simpan-di-tempat-kering.svg",
     height: 50,
     width: 100,
   },
   {
     title: "SETOR KE BANK SAMPAH",
-    image: "/images/setor-ke-bank-sampah.png",
+    image: "/images/setor-ke-bank-sampah.svg",
     height: 50,
     width: 80,
   },
@@ -45,7 +45,7 @@ export default function Home() {
       <div className="px-5 w-full bg-custom-background py-4 rounded-3xl mt-5 shadow-[0px_9px_14px_0px_#FF8D4D33]">
         <h3 className="text-md text-custom-secondary leading-none font-bold text-center">TATA CARA PILAH SAMPAH</h3>
       </div>
-      <div className="flex flex-col items-start justify-start w-full rounded-t-3xl p-4 text-white gap-10">
+      <div className="flex flex-col items-start justify-start w-full rounded-t-3xl p-4 text-white gap-10 overflow-y-scroll">
         {menu.map((t) => (
           <div
             className="w-full h-[50px] bg-custom-background shadow-[0px_9px_14px_0px_#FF8D4D33] rounded-2xl"

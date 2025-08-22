@@ -10,33 +10,33 @@ type MenuItem = {
 const menu: MenuItem[] = [
   {
     title: "nasabah pilah sampah mulai dari rumah",
-    image: "/images/nasabah-pilah-sampah-mulai-dari-rumah.png",
+    image: "/images/nasabah-pilah-sampah-mulai-dari-rumah.svg",
     height: 150,
-    width: 80,
-  },
-  {
-    title: "nasabah datang ke bank sampah bawa sampah dan buku tabungan",
-    image: "/images/nasabah-datang-ke-bank-sampah-bawa-sampah-dan-buku-tabungan.png",
-    height: 150,
-    width: 80,
-  },
-  {
-    title: "sampah ditimbang di bank sampah",
-    image: "/images/sampah-ditimbang-di-bank-sampah.png",
-    height: 50,
     width: 100,
   },
   {
+    title: "nasabah datang ke bank sampah bawa sampah dan buku tabungan",
+    image: "/images/nasabah-datang-ke-bank-sampah-bawa-sampah-dan-buku-tabungan.svg",
+    height: 150,
+    width: 70,
+  },
+  {
+    title: "sampah ditimbang di bank sampah",
+    image: "/images/sampah-ditimbang-di-bank-sampah.svg",
+    height: 50,
+    width: 70,
+  },
+  {
     title: "pengurus melakukan pemilahan sampah",
-    image: "/images/simpan-di-tempat-kering.png",
+    image: "/images/simpan-di-tempat-kering.svg",
     height: 50,
     width: 100,
   },
   {
     title: "sampah siap di jual ke bank sampah induk",
-    image: "/images/setor-ke-bank-sampah.png",
+    image: "/images/setor-ke-bank-sampah.svg",
     height: 50,
-    width: 80,
+    width: 100,
   },
 ];
 
@@ -55,7 +55,7 @@ export default function AlurBankSampahPage() {
                 alt={t.title}
                 width={t.width}
                 height={t.height}
-                className="rounded-xl object-cover sm:ml-auto"
+                className="rounded-xl object-cover mx-auto z-10"
                 priority
               />
               <div className="ml-auto text-center font-semibold text-foreground text-sm w-1/2 uppercase">{t.title}</div>
