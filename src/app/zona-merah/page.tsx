@@ -46,9 +46,12 @@ export default function Home() {
 
   return (
     <PageTemplate title="Zona merah" image="/images/zona-merah.png">
-      <div className="flex flex-col items-center justify-start w-full rounded-t-3xl p-4 text-white gap-6 z-10 overflow-y-scroll h-[80vh] md:mt-[-50px] mt-[20px]">
+      <div className="flex flex-col items-center justify-start w-full rounded-t-3xl p-4 text-white md:gap-6 gap-2 z-10 md:mt-[-20px] overflow-y-scroll">
         {menu.map((t) => (
-          <div className="w-full  max-w-[500px] h-fit rounded-2xl flex flex-col items-center gap-5 my-10" key={t.title}>
+          <div
+            className="w-full  max-w-[500px] h-fit rounded-2xl flex flex-col items-center gap-5 md:my-10"
+            key={t.title}
+          >
             <div className="font-semibold text-foreground text-sm w-[80%] shadow-[0px_9px_14px_0px_#FF8D4D33] h-full bg-custom-background rounded-2xl flex items-center justify-center uppercase px-3 py-3">
               {t.title}
             </div>

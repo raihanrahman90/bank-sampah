@@ -27,7 +27,7 @@ export default function PageTemplate({ title, image, children }: PageTemplatePro
       </div>
       <div
         className="flex flex-col items-start justify-start w-full 
-                   rounded-t-3xl p-4 text-white gap-10 mx-auto relative sm:h-[85vh]"
+                   rounded-t-3xl p-4 text-white gap-10 mx-auto relative sm:h-[85vh] h-[85vh]"
       >
         {children}
       </div>
