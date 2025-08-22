@@ -12,20 +12,8 @@ export default function Home() {
         className="top-0 absolute w-[40%]"
       />
       <div className="top-0 absolute mt-5 ml-5 flex">
-        <Image
-          alt="logo 2"
-          height={100}
-          width={100}
-          src={"/images/logo_2.svg"}
-          className="w-[70px]"
-        />
-        <Image
-          alt="logo 2"
-          height={100}
-          width={100}
-          src={"/images/logo-kkn.png"}
-          className="w-[70px]"
-        />
+        <Image alt="logo 2" height={100} width={100} src={"/images/logo_2.svg"} className="w-[70px]" />
+        <Image alt="logo 2" height={100} width={100} src={"/images/logo-kkn.png"} className="w-[70px]" />
       </div>
 
       <Image
@@ -39,8 +27,7 @@ export default function Home() {
         <h2 className="uppercase text-center text-custom-dark text-xl font-bold">
           pemerintah kota samarinda kelurahan gunung lingai
         </h2>
-        <Image alt="logo sipilah" src={"/images/logo.svg"} height={240} width={240}
-          className="w-[150px] h-auto" />
+        <Image alt="logo sipilah" src={"/images/logo.svg"} height={240} width={240} className="w-[150px] h-auto" />
         <div className="relative">
           <Image
             alt="logo sipilah"
