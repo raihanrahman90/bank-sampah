@@ -6,7 +6,7 @@ type HeaderProps = {
 
 const Header = ({ title, image }: HeaderProps) => {
   return (
-    <div className="relative w-full h-[22vh] mb-[-40px] md:mb-0">
+    <div className="relative w-full h-[15vh] mb-[-40px] md:mb-0">
       <Image
         src="/images/header-background.svg"
         alt="Header background"
