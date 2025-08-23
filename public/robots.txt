@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sipilah.com
+
+# Sitemaps
+Sitemap: https://sipilah.com/sitemap.xml
