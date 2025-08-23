@@ -8,6 +8,7 @@ export default function Home() {
     weekday: "long",
     timeZone: "Asia/Makassar", // UTC+8
   });
+  console.log(now);
 
   console.log(dayName);
   type MenuItem = {
