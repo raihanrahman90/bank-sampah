@@ -1,16 +1,21 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import PageTemplate from "../component/template";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const now = new Date();
-  const dayName = now.toLocaleDateString("id-ID", {
-    weekday: "long",
-    timeZone: "Asia/Makassar", // UTC+8
-  });
-  console.log(now);
+  const [dayName, setDayName] = useState("");
 
-  console.log(dayName);
+  useEffect(() => {
+    const now = new Date();
+    setDayName(
+      now.toLocaleDateString("id-ID", {
+        weekday: "long",
+        timeZone: "Asia/Makassar",
+      })
+    );
+  }, []);
   type MenuItem = {
     title: string;
     image: string;
